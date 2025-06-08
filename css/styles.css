@@ -37,6 +37,12 @@ header h1{
     text-shadow: 1px 1px 2px rgba(var(--shadow-color-1),0.3);
 }
 
+header a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-2);
+}
+
 header p{
     margin: 10px 0 5px 0;
 }
@@ -127,6 +133,58 @@ content {
     font-size: 0.8em;
     margin-right: 10px;
     font-weight: bold;
+}
+
+.task-sec {
+    /*display: grid;*/
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    
+    background-color: var(--color-3);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(var(--shadow-color-1),0.3);
+    border: 1px solid var(--color-3);
+}
+
+.task-sec input[type=number]{
+    display: auto;
+    color: var(--color-3);
+    padding: 15px 20px;
+    background-color: var(--color-1);
+    border-radius: 8px;
+    border: 1px solid rgba(var(--color-ref-2),0.1);
+    box-shadow: 0 3px 10px rgba(var(--shadow-color-1),0.3);
+    font-weight: 500;
+}
+
+.task-sec input[type=number]::-webkit-inner-spin-button,
+.task-sec input[type=number]::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  appearance:none;
+}
+
+.task-result span{
+    color: var(--color-2);
+} 
+
+.task-sec button{
+    display: auto;
+    color: var(--color-1);
+    padding: 15px 70px;
+    background-color: rgba(var(--color-4),0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(var(--color-ref-2),0.1);
+    box-shadow: 0 3px 10px rgba(var(--shadow-color-1),0.2);
+    font-weight: 500;
+}
+
+.task-sec button:hover{
+    background-color: rgba(var(--color-4),0.2);
+    border-color: rgba(var(--color-4),0.5);
+    color: var(--color-2);
+    box-shadow: 0 3px 10px rgba(var(--shadow-color-1),0.3);
 }
 
 @media (max-width: 768px) {
