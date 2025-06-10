@@ -111,6 +111,7 @@ content {
     display: block;
     color: var(--color-1);
     text-decoration: none;
+    text-align: left;
     padding: 15px 20px;
     background-color: rgba(var(--color-4),0.1);
     border-radius: 8px;
@@ -148,7 +149,7 @@ content {
     border: 1px solid var(--color-3);
 }
 
-.task-sec input[type=number]{
+.task-sec input{
     display: auto;
     color: var(--color-3);
     padding: 15px 20px;
