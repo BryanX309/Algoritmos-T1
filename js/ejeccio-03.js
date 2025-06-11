@@ -9,7 +9,7 @@ function multiplicar() {
 function dividir() {
   const n1 = parseFloat(document.getElementById("num1").value) || 0;
   const n2 = parseFloat(document.getElementById("num2").value) || 0;
-  var resultado;
+  let resultado;
 
   if(n2 == 0){
       resultado = 'Error';
