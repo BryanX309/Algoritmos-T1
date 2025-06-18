@@ -167,7 +167,9 @@ content {
   appearance:none;
 }
 
-.task-result span[id = "resultado"]{
+.task-result span[id = "resultado"],
+.resultado
+{
     color: var(--color-2);
 } 
 
