@@ -17,23 +17,18 @@
     <content>
         <div class="task-sec">
             <h2>Cambio de Moneda</h2>
+            <h4>$1 = L. <span id="dolar">a</span></h4>
             
-            <p>Operando</p>
-            <h4 id="previo">0</h4>
-            <input type="number" id="num" placeholder="Número" />
+            <h4>Ingrese el monto que quiere cambiar:</h4>
+            <input type="number" id="monto" placeholder="Dolares" />
 
             <p></p>
-            <button style="font-size: large;" onclick="sumar()">+</button>
-            <button style="font-size: large;" onclick="restar()">-</button>
-            <button style="font-size: large;" onclick="multi()">x</button>
-            <button style="font-size: large;" onclick="dividir()">/</button>
-            <p></p>
-            <button style="font-size: large;" onclick="igual()">=</button>
+            <button onclick="dolares()">Convertir a Lempiras</button>
 
             <h3 class="task-result"><span id="prefijo"></span><span id="resultado"></span><span id="sufijo"></span></h3>
         </div>
     </content>
 
-    <script src="../js/ejeccio-12.js"></script>
+    <script src="../js/ejeccio-13.js"></script>
 </body>
 </html>

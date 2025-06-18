@@ -1,72 +1,16 @@
-let previo = '';
-let op = '';
+const dolar = 26.15
 
-function operar() {
-  const n = parseFloat(document.getElementById("num").value) || 0;
-  
-  if(previo != ''){
+document.getElementById("dolar").textContent = dolar;
 
-    let resultado;
-    switch(op){
-      case '+':
-        resultado = previo + n;
-        break;
+function dolares() {
+  const monto = parseFloat(document.getElementById("monto").value) || 0;
+  let convert;
 
-      case '-':
-        resultado = previo - n;
-        break;
-        
-      case 'x':
-        resultado = previo * n;
-        break; 
-        
-      case '/':
-        resultado = previo / n;
-        break;
-
-      default:
-        resultado = previo;
-        break;
-    }
-
-    document.getElementById("previo").textContent = previo+op+n+'='+resultado;
-    previo = resultado;
-  }else{
-    previo = n;
-    document.getElementById("previo").textContent = previo+op;
+  if(monto != 0){
+    convert = monto * dolar;
   }
-  document.getElementById("num").value = '';
   
-  
-  //document.getElementById("prefijo").textContent = `El Número ${n} `;
-  //document.getElementById("resultado").textContent = resultado;
+  document.getElementById("prefijo").textContent = `La Conversion de $${monto} a Lempiras es de : `;
+  document.getElementById("resultado").textContent = `L. ${convert.toFixed(2)}`;
 
-}
-
-function sumar(){
-  operar();
-  op = '+';
-}
-
-
-function restar(){
-  operar();
-  op = '-';
-}
-
-
-function multi(){
-  operar();
-  op = 'x';
-}
-
-
-function dividir(){
-  operar();
-  op = '/';
-}
-
-function igual(){
-  operar();
-  op = '';
 }
