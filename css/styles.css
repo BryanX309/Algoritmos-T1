@@ -225,6 +225,26 @@ content {
     font-size: large;
 }
 
+.row{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding:20px 10px;
+}
+
+.seccion{
+    width:300px;
+    /*padding: 5px;*/
+}
+
+.seccion h3{
+    text-align: center;
+    border-bottom: 1px solid rgbA(var(--color-ref-2), 0.3);
+}
+
 @media (max-width: 550px) {
    .input-row{
         display:block;

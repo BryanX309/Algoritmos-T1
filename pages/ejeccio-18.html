@@ -9,30 +9,50 @@
 <body>
     <header>
         <h1>Algoritmos y Estructuras de Datos</h1>
-        <p>Ejercicio #17</p>
+        <p>Ejercicio #18</p>
         <p class="hashtag">#ProgramaPUMA</p>
         <a href="../index.html">Regresar</a>
     </header>
 
     <content>
         <div class="task-sec">
-            <h2>Unidades de Medida</h2>
+            <h2>Tanques de Agua</h2>
             
-            <h4>Ingrese las unidades a sumar: </h4>
-            <input type="number" id="pie" placeholder="Pies"/>
-            <input type="number" id="mtrs" placeholder="Metros"/>
+            <h4>Ingrese las capacidades de cada tanque: </h4>
+            <input type="number" id="lts" placeholder="Litros"/>
+            <input type="number" id="yrds" placeholder="Yardas Cubicas"/>
 
             <p></p>
-            <button onclick="sumar()">SUMAR</button>
+            <button onclick="distribuir()">Distribuir</button>
 
-            <h3 class="task-result"><span id="metros"></span><span id="suma_metros" class="resultado"></span></h3>
-            <h3 class="task-result"><span id="millas"></span><span id="suma_millas" class="resultado"></span></h3>
-            <h3 class="task-result"><span id="pulgadas"></span><span id="suma_pulgadas" class="resultado"></span></h3>
-            <h3 class="task-result"><span id="yardas"></span><span id="suma_yardas" class="resultado"></span></h3>
-            <h3 class="task-result"><span id="pies"></span><span id="suma_pies" class="resultado"></span></h3>
+            <div class="row">
+                <div class="seccion">
+                    <h3>MEDIDA</h3>
+                    <h3>litros</h3>
+                    <h3>metro cubico</h3>
+                    <h3>pie cubico</h3>
+                    <h3>yarda cubica</h3>
+
+                </div>
+                <div class="seccion">
+                    <h3>CONSUMO DOMESTICO</h3>
+                    <h3 class="resultado" id="dom_litros">0</h3>
+                    <h3 class="resultado" id="dom_metros_cu">0</h3>
+                    <h3 class="resultado" id="dom_pies_cu">0</h3>
+                    <h3 class="resultado" id="dom_yarda_cu">0</h3>
+                </div>
+                <div class="seccion">
+                    <h3>RIEGO</h3>
+                    <h3 class="resultado" id="riego_litros">0</h3>
+                    <h3 class="resultado" id="riego_metros_cu">0</h3>
+                    <h3 class="resultado" id="riego_pies_cu">0</h3>
+                    <h3 class="resultado" id="riego_yarda_cu">0</h3>
+                </div>
+            </div>
+            
         </div>
     </content>
 
-    <script src="../js/ejeccio-17.js"></script>
+    <script src="../js/ejeccio-18.js"></script>
 </body>
 </html>

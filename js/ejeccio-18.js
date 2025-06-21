@@ -1,26 +1,22 @@
-function sumar() {
-  const medida1 = parseFloat(document.getElementById("pie").value) * 0.3048 || 0;
-  const medida2 = parseFloat(document.getElementById("mtrs").value) || 0;
-  const resultado = medida1 + medida2;
+function distribuir() {
+  const tanque1 = parseFloat(document.getElementById("lts").value) || 0;
+  const tanque2 = parseFloat(document.getElementById("yrds").value) * 764.555|| 0; //lo convierte en litros para manejar la misma unidad de medida
+  const resultado = tanque1 + tanque2;
 
-  const metros = resultado;
-  const millas = resultado/1609;
-  const pulgadas = resultado*0.0254;
-  const yardas = resultado* 1.09361;
-  const pies = resultado* 3.28084;
+  const litros = resultado;
+  const metro_cu = resultado * 0.001;
+  const pie_cu = resultado * 0.0353147;
+  const yarda_cu = resultado * 0.00130795;
 
-  document.getElementById("metros").textContent = 'La suma en metros es: ';
-  document.getElementById("suma_metros").textContent = `${metros.toFixed(2)} mts`;
+  document.getElementById("dom_litros").textContent = (litros * 0.75).toFixed(2)+' lts';
+  document.getElementById("dom_metros_cu").textContent = (metro_cu * 0.75).toFixed(2)+ 'm³';
+  document.getElementById("dom_pies_cu").textContent = (pie_cu * 0.75).toFixed(2)+' ft³';
+  document.getElementById("dom_yarda_cu").textContent = (yarda_cu * 0.75).toFixed(2)+' yrds³';
 
-  document.getElementById("millas").textContent = 'La suma en millas es: ';
-  document.getElementById("suma_millas").textContent = `${millas.toFixed(4)} millas`;
-  
-  document.getElementById("pulgadas").textContent = 'La suma en pulgadas es: ';
-  document.getElementById("suma_pulgadas").textContent = `${pulgadas.toFixed(2)} pulg`;
-  
-  document.getElementById("yardas").textContent = 'La suma en yardas es: ';
-  document.getElementById("suma_yardas").textContent = `${yardas.toFixed(2)} yrds`;
-  
-  document.getElementById("pies").textContent = 'La suma en pies es: ';
-  document.getElementById("suma_pies").textContent = `${pies.toFixed(2)} pies`;
+  document.getElementById("riego_litros").textContent = (litros * 0.25).toFixed(2)+' lts';
+  document.getElementById("riego_metros_cu").textContent = (metro_cu * 0.25).toFixed(2)+' m³';
+  document.getElementById("riego_pies_cu").textContent = (pie_cu * 0.25).toFixed(2)+' ft³';
+  document.getElementById("riego_yarda_cu").textContent = (yarda_cu * 0.25).toFixed(2)+' yrds³';
 }
+
+distribuir();
