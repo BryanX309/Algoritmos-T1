@@ -6,5 +6,5 @@ function promedio() {
   let prom = (n1+n2+n3)/3;
   
   document.getElementById("prefijo").textContent = 'El Promedio es: ';
-  document.getElementById("resultado").textContent = prom;
+  document.getElementById("resultado").textContent = prom.toFixed(2);
 }

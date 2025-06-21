@@ -32,7 +32,7 @@ function operar(op) {
   document.getElementById("num_1").value = ``;
   document.getElementById("num_2").value = ``;
   document.getElementById("prefijo").textContent = `El resultado de ${num_1} ${op} ${num_2} = `;
-  document.getElementById("resultado").textContent = result;
+  document.getElementById("resultado").textContent = result.toFixed(2);
 }
 
 function sumar(){

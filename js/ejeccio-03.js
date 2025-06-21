@@ -19,5 +19,5 @@ function dividir() {
   
   //console.log(resultado);
   
-  document.getElementById("resultado").textContent = 'Division: ' + resultado;
+  document.getElementById("resultado").textContent = 'Division: ' + resultado.toFixed(2);
 }

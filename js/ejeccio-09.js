@@ -13,5 +13,5 @@ function Fah_a_Cel() {
   let convert = (temp-32)* 5/9;
   
   document.getElementById("prefijo").textContent = `${temp}°F en Grados Celsius es: `;
-  document.getElementById("resultado").textContent = `${convert}°C`;
+  document.getElementById("resultado").textContent = `${convert.toFixed(2)}°C`;
 }
