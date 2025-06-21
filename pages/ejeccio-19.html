@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Algoritmos y Estructuras de Datos</h1>
+        <p>Ejercicio #19</p>
+        <p class="hashtag">#ProgramaPUMA</p>
+        <a href="../index.html">Regresar</a>
+    </header>
+
+    <content>
+        <div class="task-sec">
+            <h2>Compra</h2>
+            
+            <h4>Ingrese el monto de la compra: </h4>
+            <input type="number" id="precio" placeholder="0.00"/>
+
+            <p></p>
+            <button onclick="compra()">INGRESAR</button>
+
+            <div class="row">
+                <div class="seccion" style="width: 100px;">
+                    <h3>DATOS</h3>
+                    <h3 style="text-align: left;">SubTotal: </h3>
+                    <h3 style="text-align: left;">ISV</h3>
+                    <h3 style="text-align: left;">Total: </h3>
+
+                </div>
+                <div class="seccion" style="width: 100px;">
+                    <h3>MONTO</h3>
+                    <h3 class="resultado" style="text-align: right;" id ="subtotal">0.00</h3>
+                    <h3 class="resultado" style="text-align: right;" id ="isv">0.00</h3>
+                    <h3 class="resultado" style="text-align: right;" id ="total">0.00</h3>
+                </div>
+            </div>
+            
+        </div>
+    </content>
+
+    <script src="../js/ejeccio-19.js"></script>
+</body>
+</html>
